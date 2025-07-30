@@ -48,14 +48,23 @@ export default function Home() {
       link: "/todo",
       gradient: "linear-gradient(135deg, #6D55AA, #5592AA, #5568AA)",
       icon: "📋"
+    },
+    {
+      id: "teamwork",
+      title: "👥 TeamFlow",
+      description: "Professional team collaboration and project management platform for modern teams!",
+      features: ["Kanban boards", "Team collaboration", "Project management", "Real-time updates"],
+      link: "/teamwork",
+      gradient: "linear-gradient(135deg, #5592AA, #5568AA, #6D55AA)",
+      icon: "🚀"
     }
   ];
 
   return (
     <>
       <Head>
-        <title>My Apps - TravelList & TodoApp</title>
-        <meta name="description" content="A collection of productivity apps including TravelList and TodoApp" />
+        <title>TaskFlow Hub - Productivity Suite</title>
+        <meta name="description" content="A comprehensive productivity suite including TravelList, TodoApp, and TeamFlow for modern professionals" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -63,10 +72,10 @@ export default function Home() {
         <header className={styles.homeHeader}>
           <div className={styles.headerContent}>
             <h1 className={styles.homeTitle}>
-              🚀 My Apps
+              🚀 TaskFlow Hub
             </h1>
             <p className={styles.homeSubtitle}>
-              A collection of productivity apps to help you stay organized and plan your life
+              Professional productivity suite for modern teams and individuals
             </p>
             <button
               className={styles.darkModeToggle}
@@ -104,9 +113,7 @@ export default function Home() {
           </div>
         </main>
 
-        <footer className={styles.homeFooter}>
-          <p>Built with ❤️ using Next.js</p>
-        </footer>
+
       </div>
     </>
   );
